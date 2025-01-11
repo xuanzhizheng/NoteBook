@@ -1,3 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://xuanzhizheng.github.io/NoteBook/</loc>
+         <lastmod>2025-01-11</lastmod>
+    </url>
+    <url>
+         <loc>https://xuanzhizheng.github.io/NoteBook/IS/</loc>
+         <lastmod>2025-01-11</lastmod>
+    </url>
+    <url>
+         <loc>https://xuanzhizheng.github.io/NoteBook/IS/Signal_and_System.md/</loc>
+         <lastmod>2025-01-11</lastmod>
+    </url>
 </urlset>
