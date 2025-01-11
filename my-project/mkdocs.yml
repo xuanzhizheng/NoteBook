@@ -4,5 +4,22 @@ nav:
   - About: about.md
 theme:
   name: 'material'
+  default_light: true
   palette:
-    scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default # 日间模式
+      primary: blue grey  # 上方的
+      accent: blue grey # 链接等可交互元件的高亮色
+      # teal
+      toggle:
+        icon: material/toggle-switch # 图标
+        name: 切换至夜间模式 # 鼠标悬浮提示
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate # 夜间模式
+      primary: black
+      accent: blue # 链接等可交互元件的高亮色
+      # teal
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: 切换至夜间模式
+        
