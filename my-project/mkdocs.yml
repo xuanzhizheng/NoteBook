@@ -41,6 +41,9 @@ nav:
   - IS: 
     - IS/index.md
     - Signal and System: IS/Signal_and_System.md
+  - EE: 
+    - EE/index.md
+    - Fundamentals of Electronic Circuits: EE/FoEC.md
 
 markdown_extensions:
   - attr_list
