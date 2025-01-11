@@ -1,10 +1,11 @@
 site_name: Xuan's Note
-nav:
-  - Home: index.md
-  - About: about.md
+site_url: https://xuanzhizheng.github.io/NoteBook/
+
 theme:
   name: 'material'
   default_light: true
+  favicon: img/favicon.ico
+  font: false
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
@@ -22,4 +23,57 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: 切换至夜间模式
-        
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+nav:
+  - Home: index.md
+  - About: about.md
+
+plugins:
+  - search
+  - statistics
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - toc
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
+  # - mdx_truly_sane_lists
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight: # 代码块高亮
+      auto_title: false # 显示编程语言名称
+extra_javascript:
+  - js/katex.js
+  - js/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
+  - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
+  - stylesheets/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
