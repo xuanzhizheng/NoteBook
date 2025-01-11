@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# Welcome to My Notebook!
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-mkdocs gh-deploy
+!!! info "About"
+    - ✨ ZJU 本科23级 iseer

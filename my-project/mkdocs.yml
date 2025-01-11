@@ -38,14 +38,10 @@ theme:
     - content.code.copy
 nav:
   - Home: index.md
-  - About: about.md
+  - IS: 
+    - IS/index.md
+    - Signal and System: IS/Signal_and_System.md
 
-plugins:
-  - search
-  - statistics
-  - git-revision-date-localized:
-      enable_creation_date: true
-  - toc
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -77,3 +73,9 @@ extra_css:
   - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
   - stylesheets/extra.css
   - https://unpkg.com/katex@0/dist/katex.min.css
+
+plugins:
+  - search
+  - statistics
+  - git-revision-date-localized:
+      enable_creation_date: true
