@@ -36,14 +36,6 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
-nav:
-  - Home: index.md
-  - IS: 
-    - IS/index.md
-    - Signal and System: IS/Signal_and_System.md
-  - EE: 
-    - EE/index.md
-    - Fundamentals of Electronic Circuits: EE/FoEC.md
 
 markdown_extensions:
   - attr_list
@@ -82,3 +74,15 @@ plugins:
   - statistics
   - git-revision-date-localized:
       enable_creation_date: true
+
+nav:
+  - Home: index.md
+  - IS: 
+    - IS/index.md
+    - Signal and System: IS/Signal_and_System.md
+  - EE: 
+    - EE/index.md
+    - Fundamentals of Electronic Circuits: EE/FoEC.md
+  - Language:
+    - Language/index.md
+    - 한국어: Language/한국어.md
