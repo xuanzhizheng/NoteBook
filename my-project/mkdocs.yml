@@ -79,7 +79,8 @@ nav:
   - Home: index.md
   - IS: 
     - IS/index.md
-    - Signal and System: IS/Signal_and_System.md
+    - Signal and System: 
+      - 一、信号和系统的基本概念: IS/Signal_and_System1.md
   - EE: 
     - EE/index.md
     - Fundamentals of Electronic Circuits: EE/FoEC.md
