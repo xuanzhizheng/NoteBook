@@ -80,8 +80,8 @@ nav:
   - IS: 
     - IS/index.md
     - Signal and System: 
-      - 一、信号和系统的基本概念: IS/Signal_and_System1.md
-      - 二、LTI系统的时域分析: IS/Signal_and_System2.md
+      - 一、信号和系统的基本概念: IS/Signal_and_System/Signal_and_System1.md
+      - 二、LTI系统的时域分析: IS/Signal_and_System/Signal_and_System2.md
   - EE: 
     - EE/index.md
     - Fundamentals of Electronic Circuits: EE/FoEC.md
