@@ -892,14 +892,14 @@
 <p>核心：如果知道一个x(t)对应的y(t)，则知道所有x(t)对应的y(t)</p>
 <h2 id="lti_2">（二）离散LTI系统卷积公式</h2>
 <p><span class="arithmatex">\(x[n]\)</span>单位脉冲序列，<span class="arithmatex">\(h[n]\)</span>单位脉冲响应</p>
-<p>对于<strong>LTI系统</strong>，若<span class="arithmatex">\(h[n]\)</span>相同，则输入输出相同
-$$
+<p>对于<strong>LTI系统</strong>，若<span class="arithmatex">\(h[n]\)</span>相同，则输入输出相同</p>
+<div class="arithmatex">\[
 \begin{gather}
-\delta[n] \rightarrow h[n] \
-x[n] \rightarrow y[n] \
+\delta[n] \rightarrow h[n] \\
+x[n] \rightarrow y[n] \\
 y[n]=x[n]*h[n]
 \end{gather}
-$$</p>
+\]</div>
 <ol>
 <li>
 <p>列表法</p>
@@ -978,13 +978,13 @@ $$</p>
 <ol>
 <li>
 <p>卷积公式</p>
-<p>左右同时LTI：
-$$
+<p>左右同时LTI：</p>
+<div class="arithmatex">\[
 \begin{gather}
-x[n]=\Sigma_{k=-\infty}^\infty x[k]\delta[n-k] \
+x[n]=\Sigma_{k=-\infty}^\infty x[k]\delta[n-k] \\
 \Rightarrow x[n]*h[n]=\Sigma_{k=-\infty}^\infty x[k]h[n-k]
 \end{gather}
-$$</p>
+\]</div>
 </li>
 </ol>
 <p>翻转（<strong>卷</strong>），平移，相乘（<strong>积</strong>），求和
@@ -993,18 +993,18 @@ x[n]*h[n]=\Sigma_{k=-\infty}^\infty x[k]h[-(k-n)]
 $$
 事实上同一方法，只不过交换了加法与乘法的顺序</p>
 <h3 id="lti_3">（三）连续LTI系统卷积公式推导</h3>
-<p>由连续到离散，<span class="arithmatex">\(\delta(t)冲激函数\)</span>，<span class="arithmatex">\(h(t)冲激响应\)</span>
-$$
+<p>由连续到离散，<span class="arithmatex">\(\delta(t)冲激函数\)</span>，<span class="arithmatex">\(h(t)冲激响应\)</span></p>
+<div class="arithmatex">\[
 \begin{gather}
 \delta(t) \mathop{=}\limits^{def} \mathop{lim}\limits_{\Delta \rightarrow0} \delta_\Delta(t)
-\
+\\
 \delta(t) \rightarrow h(t)
-\
+\\
 x_{\Delta}(t)=\mathop{\Sigma}\limits_{k=-\infty}^{\infty}x(k\Delta)\delta_\Delta(t-k\Delta)\times \Delta
-\
+\\
 \Rightarrow y(t)=\int_{-\infty}^\infty x(t)h(t-\tau)d\tau
 \end{gather}
-$$</p>
+\]</div>
 <h3 id="_1">（四）冲激函数的性质（难）</h3>
 <p>勒贝格定义中为何不能直接
 $$

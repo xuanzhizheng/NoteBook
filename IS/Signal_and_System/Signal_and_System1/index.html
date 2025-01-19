@@ -1089,15 +1089,16 @@ S_a(t)=\frac{sint}{t} \\
 $$
 \mathscr{L}[f(t)]=F(p)\to\mathscr{L}[\frac{f(t)}{t}]=\int_{p}^{+\infty}F(s)ds\
 $$
-得：
-$$
+得：</p>
+<div class="arithmatex">\[
 \begin{align} 
-\int_{-\infty}^{+\infty}\frac{\sin{x}}{x}dx &amp;=2\int_{0}^{+\infty}\frac{\sin{x}}{x}dx \ 
-&amp;=2\lim_{p \to 0}\int^{+\infty}_{p}\mathscr{L}[\sin{x}]dp \ 
-&amp;=2\int_0^{+\infty}\frac{1}{1+p^2}dp \
-&amp;=\pi \ 
-\end{align}\
-$$</p>
+\int_{-\infty}^{+\infty}\frac{\sin{x}}{x}dx 
+&amp;=2\int_{0}^{+\infty}\frac{\sin{x}}{x}dx \\ 
+&amp;=2\lim_{p \to 0}\int^{+\infty}_{p}\mathscr{L}[\sin{x}]dp \\ 
+&amp;=2\int_0^{+\infty}\frac{1}{1+p^2}dp \\
+&amp;=\pi \\ 
+\end{align}\\
+\]</div>
 <h3 id="4">4.离散信号函数</h3>
 <h3 id="5">5. 信号的自变量变换</h3>
 <ol>
@@ -1137,13 +1138,13 @@ x_1(t) \rightarrow y_1(t) \\
 <p>一个满足齐次性不满足叠加性的系统</p>
 <p>相同叠加推出齐次？</p>
 <h3 id="2-time-invariant-system">2. 时不变系统（Time-Invariant System）</h3>
-<p>$$
+<div class="arithmatex">\[
 \begin{gather}
-x(t) \rightarrow y(t) \
+x(t) \rightarrow y(t) \\
 \Rightarrow x(t-t_0) \rightarrow y_(t-t_0) 
 \end{gather}
-$$
-信号先平移再变换=信号先变换再平移</p>
+\]</div>
+<p>信号先平移再变换=信号先变换再平移</p>
 <p>输入信号平移<span class="arithmatex">\(t_  0\)</span>则输出信号平移<span class="arithmatex">\(t_0\)</span></p>
 <p>时不变：</p>
 <div class="arithmatex">\[
@@ -1152,36 +1153,36 @@ y(t)=x(t+k) \\
 y(t)=e^{x(t+k)}
 \end{gather}
 \]</div>
-<p>时变：
-$$
+<p>时变：</p>
+<div class="arithmatex">\[
 \begin{gather}
-y(t)=x(2t) \
-y(t)=tx(t) \
+y(t)=x(2t) \\
+y(t)=tx(t) \\
 y(t)=x(3-t)
 \end{gather}
-$$</p>
+\]</div>
 <p>判据:仅括号中有t且括号中不是t的函数</p>
 <h3 id="3-causal-system">3. 因果系统(Causal System)</h3>
 <p>输出只决定于现在和过去的输入</p>
-<p>非因果:
-$$
+<p>非因果:</p>
+<div class="arithmatex">\[
 \begin{gather}
-y(t)=x(2t) \
-y(t)=x(\frac{1}{2}t) \
+y(t)=x(2t) \\
+y(t)=x(\frac{1}{2}t) \\
 y[n]=x[3-n]
 \end{gather}
-$$</p>
+\]</div>
 <p>判据:x括号里的数恒小于/等于y括号里的数</p>
 <h3 id="4-memoryless-system">4. 无记忆系统(Memoryless System)</h3>
 <p>y(t)的值<strong>仅仅只</strong>依赖于x(t)的值</p>
-<p>记忆：
-$$
+<p>记忆：</p>
+<div class="arithmatex">\[
 \begin{gather}
-y(t)=x(t-1) \
+y(t)=x(t-1) \\
 y(t)=x(2t)
 \end{gather}
-$$
-判据:x与y中括号里的数完全一样</p>
+\]</div>
+<p>判据:x与y中括号里的数完全一样</p>
 <p><strong>无记忆系统一定是因果系统</strong></p>
 <p>微分器是否为无记忆系统/因果系统不严格进行考虑</p>
 <p>普遍认为微分器不是无记忆系统，是因果系统</p>
@@ -1189,13 +1190,13 @@ $$
 <p>x(t)能唯一写成y(t)的形式</p>
 <p>积分器可逆,微分器不可逆</p>
 <h3 id="6-stable-system">6. 稳定系统(Stable System)</h3>
-<p>$$
+<div class="arithmatex">\[
 \begin{gather}
-x(t) \rightarrow y(t) \
-\Rightarrow x(t)有界 \rightarrow y_(t)有界 \
+x(t) \rightarrow y(t) \\
+\Rightarrow x(t)有界 \rightarrow y_(t)有界 \\
 \end{gather}
-$$
-连续的微分器，积分器（叠加器）均不稳定</p>
+\]</div>
+<p>连续的微分器，积分器（叠加器）均不稳定</p>
 <p>但<strong>离散的微分器稳定</strong></p>
 
 
