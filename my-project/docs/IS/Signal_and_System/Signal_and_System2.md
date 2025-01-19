@@ -11,6 +11,7 @@ LTI系统：线性时不变系统（Linear Time-Invariant System）
 $x[n]$单位脉冲序列，$h[n]$单位脉冲响应
 
 对于**LTI系统**，若$h[n]$相同，则输入输出相同
+
 $$
 \begin{gather}
 \delta[n] \rightarrow h[n] \\
@@ -40,6 +41,7 @@ $$
 2. 卷积公式
 	
 	左右同时LTI：
+	
 	$$
 	\begin{gather}
 	x[n]=\Sigma_{k=-\infty}^\infty x[k]\delta[n-k] \\
@@ -56,6 +58,7 @@ $$
 ### （三）连续LTI系统卷积公式推导
 
 由连续到离散，$\delta(t)冲激函数$，$h(t)冲激响应$
+
 $$
 \begin{gather}
 \delta(t) \mathop{=}\limits^{def} \mathop{lim}\limits_{\Delta \rightarrow0} \delta_\Delta(t)

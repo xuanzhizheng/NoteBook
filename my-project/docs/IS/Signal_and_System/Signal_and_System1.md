@@ -66,9 +66,11 @@ $$
 \mathscr{L}[f(t)]=F(p)\to\mathscr{L}[\frac{f(t)}{t}]=\int_{p}^{+\infty}F(s)ds\\
 $$
 得：
+
 $$
 \begin{align} 
-\int_{-\infty}^{+\infty}\frac{\sin{x}}{x}dx &=2\int_{0}^{+\infty}\frac{\sin{x}}{x}dx \\ 
+\int_{-\infty}^{+\infty}\frac{\sin{x}}{x}dx 
+&=2\int_{0}^{+\infty}\frac{\sin{x}}{x}dx \\ 
 &=2\lim_{p \to 0}\int^{+\infty}_{p}\mathscr{L}[\sin{x}]dp \\ 
 &=2\int_0^{+\infty}\frac{1}{1+p^2}dp \\
 &=\pi \\ 
@@ -132,6 +134,7 @@ x(t) \rightarrow y(t) \\
 \Rightarrow x(t-t_0) \rightarrow y_(t-t_0) 
 \end{gather}
 $$
+
 信号先平移再变换=信号先变换再平移
 
 输入信号平移$t_  0$则输出信号平移$t_0$
@@ -146,6 +149,7 @@ y(t)=e^{x(t+k)}
 $$
 
 时变：
+
 $$
 \begin{gather}
 y(t)=x(2t) \\
@@ -161,6 +165,7 @@ $$
 输出只决定于现在和过去的输入
 
 非因果:
+
 $$
 \begin{gather}
 y(t)=x(2t) \\
@@ -176,12 +181,14 @@ $$
 y(t)的值**仅仅只**依赖于x(t)的值
 
 记忆：
+
 $$
 \begin{gather}
 y(t)=x(t-1) \\
 y(t)=x(2t)
 \end{gather}
 $$
+
 判据:x与y中括号里的数完全一样
 
 **无记忆系统一定是因果系统**
@@ -204,6 +211,7 @@ x(t) \rightarrow y(t) \\
 \Rightarrow x(t)有界 \rightarrow y_(t)有界 \\
 \end{gather}
 $$
+
 连续的微分器，积分器（叠加器）均不稳定
 
 但**离散的微分器稳定**
