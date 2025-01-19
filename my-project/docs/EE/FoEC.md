@@ -141,7 +141,7 @@ $$
 f_H=\frac{1}{\frac{1}{f_{H1}}+\frac{1}{f_{H2}}+\frac{1}{f_{H3}}+···},\omega_H=\frac{1}{\Sigma CR}
 $$
 
-### 反馈：
+### 反馈
 
 闭环增益$A_f$，开环增益$A$，反馈系数$F$，环路增益$AF$，**反馈量$1+AF$**
 
@@ -159,7 +159,7 @@ $$
 
 3. 拓展带宽
 	$$
-	\omega_{Hf}=(1+AF)\omega_H,\omega_{Lf}=\frac{1}{1+AF}\omega_L，\omega_{BWf}=(1+AF)\omega_{BW}
+	\omega_{Hf}=(1+AF)\omega_H，\omega_{Lf}=\frac{1}{1+AF}\omega_L，\omega_{BWf}=(1+AF)\omega_{BW}
 	$$
 
 4. 串联增大电阻

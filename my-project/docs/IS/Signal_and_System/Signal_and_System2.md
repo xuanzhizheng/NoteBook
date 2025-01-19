@@ -12,9 +12,11 @@ $x[n]$单位脉冲序列，$h[n]$单位脉冲响应
 
 对于**LTI系统**，若$h[n]$相同，则输入输出相同
 $$
+\begin{gather}
 \delta[n] \rightarrow h[n] \\
 x[n] \rightarrow y[n] \\
 y[n]=x[n]*h[n]
+\end{gather}
 $$
 
 1. 列表法
@@ -39,8 +41,10 @@ $$
 	
 	左右同时LTI：
 	$$
+	\begin{gather}
 	x[n]=\Sigma_{k=-\infty}^\infty x[k]\delta[n-k] \\
 	\Rightarrow x[n]*h[n]=\Sigma_{k=-\infty}^\infty x[k]h[n-k]
+	\end{gather}
 	$$
 
 翻转（**卷**），平移，相乘（**积**），求和
@@ -53,6 +57,7 @@ $$
 
 由连续到离散，$\delta(t)冲激函数$，$h(t)冲激响应$
 $$
+\begin{gather}
 \delta(t) \mathop{=}\limits^{def} \mathop{lim}\limits_{\Delta \rightarrow0} \delta_\Delta(t)
 \\
 \delta(t) \rightarrow h(t)
@@ -60,6 +65,7 @@ $$
 x_{\Delta}(t)=\mathop{\Sigma}\limits_{k=-\infty}^{\infty}x(k\Delta)\delta_\Delta(t-k\Delta)\times \Delta
 \\
 \Rightarrow y(t)=\int_{-\infty}^\infty x(t)h(t-\tau)d\tau
+\end{gather}
 $$
 
 ### （四）冲激函数的性质（难）
@@ -74,9 +80,9 @@ $$
 $$
 
 1. $\int_{-\infty}^{\infty}\delta(t)dt=1$
-2. $\int_{-\infty}^{\infty}x(t)\delta(t)dt=x(0)，\delta(t)定义$
+2. $\int_{-\infty}^{\infty}x(t)\delta(t)dt=x(0)，\delta(t)$**定义**
 3. $x(t)\delta(t)=x(0)\delta(t)$
-4. $\delta(at)=\frac{1}{|a|}\delta(t)$
+4. $\delta(at)=\frac{1}{|a|}\delta(t)$，**在拉伸**$\delta(t)$**时需注意**
 5. $\delta(f(t))=\sum\limits_{f(t_0)=0}\frac{1}{|f^\prime(t_0)|}\delta(t-t_0)$
 
 其中2是冲激函数的核心，表明冲激函数实质就是在积分下取函数在冲激时间下的值，1是2的特例，取常数1在冲激时间下的值
@@ -95,4 +101,4 @@ $$
 
 方波题目其实本质可以看成离散波，用列表法解决？
 
-卷积后 横坐标为带着坐标翻转并相加？
+卷积后 横坐标为带着坐标翻转并相加？ 
